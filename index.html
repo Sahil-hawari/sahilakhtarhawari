@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahil Akhtar Hawari — Architect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- ✏️ Your styles are in style.css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">S<span>.</span>Hawari</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section id="hero">
+    <div class="hero-left">
+      <p class="hero-eyebrow">Architecture &amp; Design</p>
+
+      <!-- ✏️ EDIT: Change name below -->
+      <h1 class="hero-name">
+        Sahil Akhtar<strong>Hawari</strong>
+      </h1>
+
+      <!-- ✏️ EDIT: Change tagline below -->
+      <p class="hero-tagline">
+        Designing spaces that speak —<br />
+        where form, function, and feeling converge.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+
+      <div class="hero-scroll-hint">
+        <div class="scroll-line"></div>
+        Scroll to explore
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <!--
+        ✏️ EDIT: To add a hero image, replace the placeholder below with:
+        <img class="hero-image" src="YOUR_GITHUB_IMAGE_URL" alt="Sahil Hawari" />
+
+        Example GitHub raw image URL:
+        https://raw.githubusercontent.com/yourusername/yourrepo/main/images/hero.jpg
+      -->
+      <div class="hero-image-placeholder">
+        <svg viewBox="0 0 100 100" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="40" width="80" height="50" fill="none" stroke="white" stroke-width="2"/>
+          <polygon points="10,40 50,10 90,40" fill="none" stroke="white" stroke-width="2"/>
+          <rect x="38" y="60" width="24" height="30" fill="white" opacity="0.4"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION
+  ============================================================ -->
+  <section id="projects">
+    <div class="projects-header fade-up">
+      <div>
+        <p class="section-label">Portfolio</p>
+        <h2 class="section-title">Selected <em>Works</em></h2>
+      </div>
+      <div class="filter-tabs" id="filterTabs"></div>
+    </div>
+    <div class="projects-grid" id="projectsGrid"></div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section id="about">
+    <div class="about-image-wrap fade-up">
+      <!--
+        ✏️ EDIT: To add your photo, replace the placeholder below with:
+        <img class="about-photo" src="YOUR_GITHUB_PHOTO_URL" alt="Sahil Hawari" />
+      -->
+      <div class="about-photo-placeholder">
+        <svg viewBox="0 0 100 100" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="35" r="20" fill="none" stroke="white" stroke-width="2"/>
+          <path d="M10 90 Q50 60 90 90" fill="none" stroke="white" stroke-width="2"/>
+        </svg>
+      </div>
+
+      <!-- ✏️ EDIT: Change the number and label to your years of experience / projects count -->
+      <div class="about-accent-box">
+        <div class="about-accent-num" id="projectCount">0</div>
+        <div class="about-accent-label">Projects</div>
+      </div>
+    </div>
+
+    <div class="about-content fade-up">
+      <p class="section-label">About Me</p>
+      <h2 class="section-title">The Architect<br />Behind the <em>Vision</em></h2>
+
+      <!-- ✏️ EDIT: Change the bio paragraph below -->
+      <p class="about-bio">
+        I am Sahil Akhtar Hawari, an architecture student driven by the belief that great spaces shape human experience.
+        My work explores the intersection of structural integrity and poetic form — buildings that are not just seen, but felt.
+        From urban housing concepts to cultural pavilions, each project is a dialogue between context, materiality, and purpose.
+      </p>
+
+      <!-- ✏️ EDIT: Change skills and percentages (0.0 to 1.0) in script.js -->
+      <div class="about-skills" id="skillsContainer">
+        <!-- Skills are rendered by JS — edit the SKILLS array in script.js -->
+      </div>
+
+      <!-- ✏️ EDIT: Add/change your social links below -->
+      <div class="about-socials">
+        <a href="#" class="social-link" title="LinkedIn" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="#" class="social-link" title="Instagram" aria-label="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="mailto:your@email.com" class="social-link" title="Email" aria-label="Email">
+          <!-- ✏️ EDIT: Replace your@email.com above with your real email -->
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section id="contact">
+    <div class="fade-up">
+      <p class="section-label">Contact</p>
+      <h2 class="section-title">Let's Build<br />Something <em>Together</em></h2>
+
+      <!-- ✏️ EDIT: Change tagline -->
+      <p class="contact-tagline">
+        Open to collaborations, academic discussions,<br />
+        and new opportunities. Don't hesitate to reach out.
+      </p>
+
+      <div class="contact-details">
+        <!-- ✏️ EDIT: Change email, location, university below -->
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-text">your@email.com</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="contact-item-label">Location</div>
+            <div class="contact-item-text">Your City, Your Country</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div>
+            <div class="contact-item-label">University</div>
+            <div class="contact-item-text">Your University Name</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="fade-up">
+      <!-- ✏️ EDIT: Change the action URL below to your Formspree endpoint
+           Sign up free at https://formspree.io and replace "YOUR_FORM_ID"
+           Or remove the action to use mailto -->
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Collaboration proposal..." />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell me about your project or idea..." required></textarea>
+        </div>
+        <button type="submit" class="btn-send">Send Message →</button>
+        <p class="form-note">* I usually reply within 1–2 business days.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer>
+    <div class="footer-logo">S<span>.</span>Hawari</div>
+    <p class="footer-copy">© <span id="year"></span> Sahil Akhtar Hawari. All rights reserved.</p>
+  </footer>
+
+  <!-- ============================================================
+       PROJECT MODAL
+  ============================================================ -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+    <div class="modal" id="modal">
+      <button class="modal-close" onclick="closeModalBtn()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-media" id="modalMedia"></div>
+      <div class="modal-body">
+        <div class="modal-meta">
+          <span class="modal-category" id="modalCategory"></span>
+          <span class="modal-year" id="modalYear"></span>
+        </div>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <p class="modal-desc" id="modalDesc"></p>
+        <div class="modal-tags" id="modalTags"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✏️ Your JavaScript (projects, skills, interactions) is in script.js -->
+  <script src="script.js"></script>
+
+</body>
+</html>
