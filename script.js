@@ -53,7 +53,7 @@ const PROJECTS = [
     category:    "Public Space",
     year:        "2024",
     description: "A multi-purpose urban pavilion designed for a central city square, integrating green roofing, flexible event spaces, and passive ventilation systems. The structure responds to its surroundings through a language of interlocking concrete frames softened by climbing plants.",
-    image:       "",   // ← Paste your GitHub raw image URL here
+    image:       "images\\soyeb dai.jpg",   // ← Paste your GitHub raw image URL here
     video:       "",   // ← Paste YouTube embed URL here (or leave empty)
     tags:        ["Concrete", "Sustainable", "Public"],
   },
@@ -62,7 +62,7 @@ const PROJECTS = [
     category:    "Residential",
     year:        "2023",
     description: "A private residence perched along a coastal cliff, designed to dissolve boundaries between interior living and the sea horizon. Floor-to-ceiling glazing, cantilevered terraces, and a monolithic stone plinth define its bold character.",
-    image:       "",
+    image:       "images\\afrin.jpg",
     video:       "",
     tags:        ["Stone", "Glazing", "Landscape"],
   },
